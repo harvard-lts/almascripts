@@ -1,0 +1,35 @@
+# Used by our archive_alma_files.py script to archive files after Alma
+# processing. A block of parameters must be defined for each file archive. 
+# Copying and editing an existing block is recommended to help maintain the
+# proper format. Notice that each config set needs to start with a dash. Also, 
+# numbers should not be quoted (or the script will take them as strings).
+#
+# Config set parameters
+#   profile_name
+#       Name used the identify the profile
+#
+#   job_status
+#       Optional, If used, set to either ENABLED or DISABLED.
+#
+#   local_directory
+#       Files are put here to await Alma processing
+#
+#   local_archive
+#       Files are moved here from the alam_directory after Alma processing
+#
+# Global parameters are set for all vendors and uses a profile name on GLOBAL.
+#
+#   status_file_directory
+#       Directory which will hold status flag files (if used)
+#
+#   archive_only_handled
+#       If used and set to 'YES' only *.handled files will be archived
+
+- profile_name: 'GLOBAL'
+  status_file_directory: ''
+  archive_only_handled: ''
+
+- profile_name: ''
+  job_status: 'ENABLED'
+  local_directory: ''
+  local_archive: ''

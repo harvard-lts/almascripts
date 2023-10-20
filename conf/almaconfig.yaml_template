@@ -1,0 +1,48 @@
+# Top level configuration file for our Alma scripts using YAML format
+
+# Url to Alma's API
+urlAlmaApi: 'https://api-na.hosted.exlibrisgroup.com/almaws/v1/'
+
+# Use for the Alma user API (patload and others)
+apiKeyPatron: ''
+
+# Use to create, update or delete Alma item records
+apiKeyBibsRw: ''
+
+# Use to access Alma analytics reports
+apiKeyAnalytics: ''
+
+# Use to access Alma PO
+apiKeyAcquisitions: ''
+
+# Use to update user's requests
+apiKeyUserRequest: ''
+
+# PDS API url and key
+urlPdsApi: ''
+apiKeyPds: ''
+
+urlNcip: ''
+
+gpgLtsPassPhrase: ''
+
+# Holds incoming dropboxes for Alma
+almaDropboxRoot: ''
+
+# Holds Alma outfiles
+almaOutputRoot: ''
+
+# Harvard Depository's server
+hdServer: ''
+
+# Webhook Handler's home dir
+webhookDir: ''
+
+# For the Library Reporting Warehouse (Database, LRW)
+lrwHost: ''
+lrwRoUser: ''
+lrwRoPasswd: ''
+lrwRwUser: ''
+lrwRwPasswd: ''
+lrwPort: 
+lrwSchema: ''

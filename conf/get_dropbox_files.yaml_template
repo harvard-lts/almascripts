@@ -1,0 +1,53 @@
+# Used by our dropbox files script to move dropbox files in place.
+# A block of parameters must be defined for each dropbox file transfer. Copying 
+# and editing an existing block is recommended to help maintain the proper 
+# format. Notice that each config set needs to start with a dash. Also, 
+# numbers should not be quoted (or the script will take them as strings).
+#
+# Config set parameters
+#   profile_name
+#       Name used the identify the profile
+#
+#   dropbox_incoming
+#       The source directory
+#
+#   dropbox_archive
+#       Incoming files will be archives to this directory
+#
+#   dropbox_filename
+#       A regular expression used to match the incoming files. 
+#       Parentheses can be used with the MATCH keyword to rename the file. 
+#
+#   local_directory
+#       The destination directory for the incoming files
+#
+#   rename_local_file     
+#        Optional. Use if renaming files. The following keywords are supported:
+#            LOWERCASE  Convert file name to all lower case
+#            MATCH      Substitute the MATCH keyword with what is matched in 
+#                       parentheses in the source_filename
+#
+# Global parameters are set for all vendors and uses a profile name on GLOBAL.
+# Supported parameters are below.
+#
+#   status_file_directory
+#       Directory which will hold status flag files (if used)
+
+- profile_name: 'GLOBAL'
+  status_file_directory: ''
+
+# Config Set 1
+- profile_name: ''
+  dropbox_incoming: ''
+  dropbox_archive: ''
+  dropbox_filename: ''
+  local_directory: ''
+  rename_local_file: ''
+    
+# Config Set 2
+- profile_name: ''
+  dropbox_incoming: ''
+  dropbox_archive: ''
+  dropbox_filename: ''
+  local_directory: ''
+  rename_local_file: ''
