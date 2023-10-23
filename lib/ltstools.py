@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-#
 # Common LTS script routines and variables 
 #
 # TME  06/22/18  Initial version
@@ -23,6 +21,8 @@
 # TME  03/13/23  send_mail_attachment() now accepts a replyTo optional parameter  
 # TME  05/12/23  Added is_maintenance_window()
 # TME  09/15/23  Added is_week_day()
+# TME  10/23/23  Get variables for mail.yaml config file. 
+#                Removed ltsScripts and notify. Removed shbang.
 
 #
 # Load modules, set/initialize global variables
@@ -38,7 +38,7 @@ mailListDir = libDir.replace('lib', 'mail_lists')
 sys.path.append(confDir)
 
 # Load top level script configuration file
-scriptConf = os.path.join(confDir, 'ltsconfig.yaml')
+scriptConf = os.path.join(confDir, 'main.yaml')
 
 with open(scriptConf, 'r') as ymlfile:
     config = yaml.load(ymlfile, Loader=yaml.SafeLoader)
@@ -47,10 +47,6 @@ try:
 	mode = config['mode']
 except:
 	print('Error: failed to load config parameter mode from %s' % scriptConf)
-try:
-	ltsScripts = config['ltsScripts']
-except:
-	print('Error: failed to load config parameter ltsScripts from %s' % scriptConf)
 try:
 	privateKey = config['privateKey']
 except:
@@ -226,32 +222,6 @@ def is_winter_break(notifyJM = False, datestamp = False):
 		return True
 	else:
 		return False
-
-# notify
-# Notify user, by email if specified.
-#
-# Parameters
-#   result      This will appear in the body of the email and subject line.
-#   job         Such as in "EDO Load Files". This will
-#               appear in the body of the email and subject line.
-#   message     Optional. Any addtional information to show the user, it will be seen
-#               in the body of the email. Can be left empty.
-#   mailTo      Optional. Email address to send message to.
-#
-def notify(result, job, message = False, mailTo = False):
-
-    if mailTo:
-        if message:
-            mailMsg = message
-        else:
-            mailMsg = job, result
-            
-        send_mail(mailTo, adminMailFrom, '%s %s' % (job, result), '%s' % (mailMsg))
-    
-    print(job, result)
-    if message: print(message)
-
-    return
 
 # send_mail
 #

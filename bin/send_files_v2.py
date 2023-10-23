@@ -1,9 +1,10 @@
-#!/bin/env python3
+#!/usr/bin/env python3
 #
 # Run the script with it's -h option to see it's description
 # and usage or scroll down at bit
 #
 # TME  08/04/23  New updated version of send_files.py
+# TME  10/23/23  Changed shbang to use /usr/bin/env
 
 #
 # Load modules, set/initialize global variables, grab arguments & check usage

@@ -1,4 +1,4 @@
-#!/bin/env python3
+#!/usr/bin/env python3
 #
 # Run the script with it's -h option to see it's description
 # and usage or scroll down at bit
@@ -6,6 +6,7 @@
 # TME  12/17/18  Initial version
 # TME  06/06/19  Use string formatting to set encryptedFile
 # TME  01/24/20  gpgCmd and gpgDir are now set in ltstools.py
+# TME  10/23/23  Removed ltsScripts. Changed shbang to use /usr/bin/env.
 
 #
 # Load modules, set/initialize global variables, grab arguments & check usage
@@ -19,7 +20,7 @@ binDir = os.path.dirname(os.path.realpath(__file__))
 # Find and load any of our modules that we need
 commonLib = binDir.replace('bin', 'lib')
 sys.path.append(commonLib)
-from ltstools import ltsScripts, mode, gpgCmd, gpgDir
+from ltstools import mode, gpgCmd, gpgDir
 
 usageMsg  = "This script can be used to encrypt or decrypt a file"
 

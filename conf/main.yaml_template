@@ -1,9 +1,12 @@
 # Top level configuration file for our Alma scripts using YAML format
 
+# Mode/instance such as prod, qa, test, dev
+mode: ''
+
 # Url to Alma's API
 urlAlmaApi: 'https://api-na.hosted.exlibrisgroup.com/almaws/v1/'
 
-# Use for the Alma user API (patload and others)
+# Use for the Alma user API (patron loader and others)
 apiKeyPatron: ''
 
 # Use to create, update or delete Alma item records
@@ -18,13 +21,7 @@ apiKeyAcquisitions: ''
 # Use to update user's requests
 apiKeyUserRequest: ''
 
-# PDS API url and key
-urlPdsApi: ''
-apiKeyPds: ''
-
 urlNcip: ''
-
-gpgLtsPassPhrase: ''
 
 # Holds incoming dropboxes for Alma
 almaDropboxRoot: ''
@@ -32,11 +29,36 @@ almaDropboxRoot: ''
 # Holds Alma outfiles
 almaOutputRoot: ''
 
+# Private key full path. Used when transferring files using a ssh key exchange.
+privateKey: ''
+
+# Errors that are suspected to be system level problems should be sent here
+adminMailTo: ''
+adminMailFrom: ''
+
+# For gpg_file.py
+# Path to ~/.gnupg for account running the scripts
+gpgDir: ''
+
+# Full path to gpg
+gpgCmd: ''
+
+gpgLtsPassPhrase: ''
+
+# PDS API url and key
+urlPdsApi: ''
+apiKeyPds: ''
+
+# Url to the Job Monitor
+jobMonitor: ''
+
 # Harvard Depository's server
 hdServer: ''
 
 # Webhook Handler's home dir
 webhookDir: ''
+# To work with Oracle databases
+oracleHome: '/usr/lib/oracle/12.2/client64'
 
 # For the Library Reporting Warehouse (Database, LRW)
 lrwHost: ''

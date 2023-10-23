@@ -1,4 +1,4 @@
-#!/bin/env python3
+#!/usr/bin/env python3
 #
 # Run the script with it's -h option to see it's description
 # and usage or scroll down at bit
@@ -8,6 +8,7 @@
 #                Return true if files are downloaded, otherwise, return False.
 #                Added check for password and ssh key.
 # TME  08/15/23  Changing to use object oriented programming
+# TME  10/23/23  Changed shbang to use /usr/bin/env
 
 #
 # Load modules, set/initialize global variables, grab arguments & check usage

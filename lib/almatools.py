@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-#
 # Alma related variables and Python functions
 # Loads almaconfig.yaml and makes its variables available to our Python scripts 
 #
@@ -23,8 +21,9 @@
 # TME  09/13/22  Using SafeLoader with yaml module
 # TME  09/16/22  Added urlJobsApi
 # TME  09/23/22  Added urlHoldingsApi
-# TME  10/20/23  Removed is_reqular_work_hours (but kept is_regular_work_hours) 
-
+# TME  10/23/23  Get variables for mail.yaml config file. Removed shbang.
+#                Removed is_reqular_work_hours (but kept is_regular_work_hours)
+             
 #
 # Load modules, set/initialize global variables
 #
@@ -39,7 +38,7 @@ scriptLib  = os.path.dirname(os.path.realpath(__file__))
 scriptHome = scriptLib.replace('lib', 'conf')
 
 # Load top level script configuration file
-scriptConf = os.path.join(scriptHome, 'almaconfig.yaml')
+scriptConf = os.path.join(scriptHome, 'main.yaml')
 
 try:
 	with open(scriptConf, 'r') as ymlfile:

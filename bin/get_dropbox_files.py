@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/env python3
 #
 # Run the script with it's -h option to see it's description
 # and usage or scroll down at bit
@@ -15,6 +15,7 @@
 #                to the incoming archive directory
 # TME  09/14/22  Using SafeLoader with yaml module
 # TME  07/13/23  Move duplicate files to dupe directory
+# TME  10/23/23  Changed shbang to use /usr/bin/env
 
 #
 # Load modules, set/initialize global variables, grab arguments & check usage

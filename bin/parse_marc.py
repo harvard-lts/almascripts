@@ -1,9 +1,10 @@
-#!/bin/python3
+#!/usr/bin/env python3
 #
 # Run the script with it's -h option to see it's description
 # and usage or scroll down at bit
 #
 # TME  03/25/22  Initial version
+# TME  10/23/23  Changed shbang to use /usr/bin/env
 
 import argparse
 from pymarc import MARCReader

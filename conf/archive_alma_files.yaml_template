@@ -29,7 +29,7 @@
   status_file_directory: ''
   archive_only_handled: ''
 
-- profile_name: ''
+- profile_name: 'garcia'
   job_status: 'ENABLED'
-  local_directory: ''
-  local_archive: ''
+  local_directory: '/dropbox/vendors/almaexchanges/alma/hulgar/marc/incoming'
+  local_archive: '/dropbox/vendors/almaexchanges/alma/hulgar/marc/archive'

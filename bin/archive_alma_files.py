@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/env python3
 #
 # Run the script with it's -h option to see it's description
 # and usage or scroll down at bit
@@ -8,6 +8,7 @@
 # TME  04/12/19  Remove headings from result messages
 # TME  04/23/19  Archive only *.handled files if specified
 # TME  09/14/22  Using SafeLoader with yaml module
+# TME  10/23/23  Changed shbang to use /usr/bin/env
 
 #
 # Load modules, set/initialize global variables, grab arguments & check usage

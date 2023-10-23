@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 #
 # Run the script with it's -h option to see it's description
 # and usage or scroll down at bit
@@ -14,6 +14,7 @@
 # TME  09/28/22  Increased max allowed message size to 204800
 # TME  11/30/22  Returned max allowed message size to 65535
 # TME  04/13/23  Moved most of the logic to the notify class
+# TME  10/23/23  Changed shbang to use /usr/bin/env
 
 #
 # Load modules, set/initialize global variables

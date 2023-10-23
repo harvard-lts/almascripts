@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/env python3
 #
 # TME  02/01/21  Initial version
 # TME  02/09/21  Now uses a file are barcodes to determine which items to keep.
@@ -11,6 +11,7 @@
 # TME  04/20/21  Less matching in my regular expression and file glob, just 
 #                want the numeric sequences. Copies barcode file properly now.
 # TME  06/08/21  Support for a second file naming convention
+# TME  10/23/23  Changed shbang to use /usr/bin/env
 
 #                
 

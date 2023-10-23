@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/env python3
 #
 # TME  07/17/17  Initial version
 # TME  09/13/17  Added more error checking and weeding restrictions
@@ -13,6 +13,7 @@
 # TME  05/08/23  fileWasCompress was referenced before assignment
 # TME  07/26/23  Can now weed mutliple directories for a single profile.
 #                0 days to keep is now supported.
+# TME  10/23/23  Changed shbang to use /usr/bin/env
 
 #
 # Load modules, define variables, grab arguments & check usage
