@@ -6,6 +6,7 @@
 #
 # TME  03/31/23  Initial version
 # TME  06/05/23  Added Oracle home bin to path
+# TME  10/24/23  Use main.yaml rather than ltsconfig.yaml
 
 # Show help message or get script command to run
 showHelp=0
@@ -35,7 +36,7 @@ cd $scriptDir
 cd ..
 
 # Set the Oracle environment
-ORACLE_HOME=`/bin/grep -i oracleHome conf/ltsconfig.yaml|/bin/cut -d "'" -f 2`
+ORACLE_HOME=`/bin/grep -i oracleHome conf/main.yaml|/bin/cut -d "'" -f 2`
 
 PATH=$PATH:$ORACLE_HOME/bin
 LD_LIBRARY_PATH=$ORACLE_HOME/lib
