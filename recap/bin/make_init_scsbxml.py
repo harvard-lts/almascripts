@@ -1,19 +1,7 @@
 #!/usr/bin/env python3
 #
-# TME  02/01/21  Initial version
-# TME  02/09/21  Now uses a file are barcodes to determine which items to keep.
-#                Holdings without items are dropped. Bibs without holdings are 
-#                dropped. Use 'HV' in datafield 900 subfield b.
-# TME  03/02/21  Report if a barcode file is used
-# TME  04/01/21  Catch and report output file write failures.
-#                Skip files that are not named as expected.
-# TME  04/19/21  Map value of 900 $b from 876 $9 (subfield 9)
-# TME  04/20/21  Less matching in my regular expression and file glob, just 
-#                want the numeric sequences. Copies barcode file properly now.
-# TME  06/08/21  Support for a second file naming convention
-# TME  10/23/23  Changed shbang to use /usr/bin/env
-
-#                
+# Initial version 02/01/21 TME
+# Last updated 10/23/27 TME
 
 #
 # Load modules, set/initialize global variables, grab arguments & check usage
