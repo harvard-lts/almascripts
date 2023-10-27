@@ -1,7 +1,12 @@
 # Top level configuration file for our Alma scripts using YAML format
 
 # Mode/instance such as prod, qa, test, dev
-mode: ''
+mode: 'dev'
+
+# To set the script's reporting method globally. 
+# Currently supported: 'log', 'stdout', 'monitor' or 'monitor+log'. 
+# A Job Monitor would need to be set-up to use the monitor reporting methods.   
+reportMethod: 'log'
 
 # Url to Alma's API
 urlAlmaApi: 'https://api-na.hosted.exlibrisgroup.com/almaws/v1/'
@@ -41,7 +46,7 @@ adminMailFrom: ''
 gpgDir: ''
 
 # Full path to gpg
-gpgCmd: ''
+gpgCmd: '/bin/gpg'
 
 gpgLtsPassPhrase: ''
 
@@ -57,6 +62,7 @@ hdServer: ''
 
 # Webhook Handler's home dir
 webhookDir: ''
+
 # To work with Oracle databases
 oracleHome: '/usr/lib/oracle/12.2/client64'
 

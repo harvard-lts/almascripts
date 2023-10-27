@@ -13,7 +13,8 @@
 # TME  05/08/23  fileWasCompress was referenced before assignment
 # TME  07/26/23  Can now weed mutliple directories for a single profile.
 #                0 days to keep is now supported.
-# TME  10/23/23  Changed shbang to use /usr/bin/env
+# TME  10/24/23  Changed shbang to use /usr/bin/env.
+#                Use reportMethod from ltstools.
 
 #
 # Load modules, define variables, grab arguments & check usage
@@ -27,7 +28,7 @@ binDir = os.path.dirname(os.path.realpath(__file__))
 # Find and load any of our modules that we need
 commonLib = binDir.replace('bin', 'lib')
 sys.path.append(commonLib)
-from ltstools import get_date_time_stamp
+from ltstools import get_date_time_stamp, reportMethod
 from notify import notify
 
 jobName      = 'Weed Files'
@@ -74,7 +75,7 @@ def main():
 		notifyJM = notify('echo', jobCode)
 		notifyJM.log('pass', f'Check configuration file {confFile}', verbose)
 	else:
-		notifyJM = notify('monitor+log', jobCode, logFile)
+		notifyJM = notify(reportMethod, jobCode, logFile)
 		notifyJM.log('pass', 'Weeding all defined config sets on %s' % gethostname(), verbose)
 		notifyJM.report('start')
 

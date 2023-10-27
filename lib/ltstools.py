@@ -21,8 +21,9 @@
 # TME  03/13/23  send_mail_attachment() now accepts a replyTo optional parameter  
 # TME  05/12/23  Added is_maintenance_window()
 # TME  09/15/23  Added is_week_day()
-# TME  10/23/23  Get variables for mail.yaml config file. 
+# TME  10/23/23  Get variables for mail.yaml config file. Added reportMethod.
 #                Removed ltsScripts and notify. Removed shbang.
+              
 
 #
 # Load modules, set/initialize global variables
@@ -47,6 +48,10 @@ try:
 	mode = config['mode']
 except:
 	print('Error: failed to load config parameter mode from %s' % scriptConf)
+try:
+	reportMethod = config['reportMethod']
+except:
+	print('Error: failed to load config parameter reportMethod from %s' % scriptConf)
 try:
 	privateKey = config['privateKey']
 except:
