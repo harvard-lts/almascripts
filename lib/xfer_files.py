@@ -2,10 +2,8 @@
 # Multiple attempts are made for sftp operations if needed.
 # A 10 second delay is used to start with between tries.
 #
-# TME  08/19/19  Initial version
-# TME  08/29/19  Added get_file()
-# TME  10/06/20  Now extending pysftp.Connection(). Removed the connect 
-#                and disconnect routines. Added put_dir().
+# Initial version 08/19/19 TME
+# Last updated 10/06/20 TME
 
 from pysftp import Connection
 from retrying import retry

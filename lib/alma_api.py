@@ -1,18 +1,7 @@
 # Use this class for working with the Alma's API
 #
-# TME  03/26/19  Initial version
-# TME  06/14/19  Added support for http put
-# TME  07/03/19  Using separate connect and read timeouts
-#                Added stopSession()
-#                Always use a wait before starting a new session
-# TME  09/03/19  Added get_holdings() and update_holdings()
-# TME  10/23/19  Added get_bib()
-# TME  12/13/19  Added support for the delete http method
-# TME  04/24/20  Added update_bib()
-# TME  04/29/21  Added lookup_by_barcode() and get_item()
-# TME  08/24/21  Increased read timeout to 30 seconds
-# TME  10/04/21  Increased read timeout to 60 seconds
-# TME  09/16/22  Added start_job()
+# Initial version 03/26/19 TME
+# Last updated 09/16/22 TME
 
 import os, sys, re
 from time import sleep

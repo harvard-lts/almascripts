@@ -1,17 +1,7 @@
 # Use this module for script reporting
 #
-# TME  11/06/18  Initial version
-# TME  06/06/19  Use message type headings if more than one type of message is reported
-# TME  08/15/19  Added support logging with the 'monitor+log'
-# TME  03/27/20  Logging now appends to log file
-# TME  04/08/20  Added log notify method to log without notifying the
-#                Job Monitor. Also added status message counters.
-# TME  04/30/20  Don't try to print job code when echo is set
-# TME  06/16/20  report() now accepts a header message
-# TME  01/24/22  Use FAILED rather than FAIL for status
-# TME  04/13/23  Class will now report to the Job Monitor itself rather than 
-#                using notifyJM.py. Retries are logged. Results message is 
-#                written to log if Job Monitor is not responding.
+# Initial version 11/06/18 TME
+# Last updated 04/13/23 TME
 
 #
 # Load modules, set/initialize global variables

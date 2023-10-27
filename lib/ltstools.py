@@ -1,29 +1,7 @@
 # Common LTS script routines and variables 
 #
-# TME  06/22/18  Initial version
-# TME  12/07/18  Added send_mail_attachment()
-# TME  07/09/19  Using SafeLoader with yaml module
-# TME  09/12/19  Added get_date_time_stamp()
-# TME  10/31/19  Added privateKey and try/excepts
-# TME  01/24/20  Added support for the gpg parameters
-# TME  03/27/20  Added monthly precision get_date_time_stamp
-# TME  04/07/21  Added oracleHome
-# TME  08/12/21  Added support for Footprints API
-# TME  08/23/21  Remove make_fp_ticket() since it used hulmail.
-#                Added get_mail_list()
-# TME  06/30/22  Now using mailhub.harvard.edu as mail host
-# TME  10/05/22  Removed variables used with Footprints
-# TME  10/13/22  Added year precision to get_date_time_stamp()
-# TME  12/13/22  Added is_holiday()
-# TME  12/14/22  Added is_winter_break()
-# TME  01/25/23  Added unpack_file()
-# TME  03/02/23  Added zip_files() and usage message for unpack_file
-# TME  03/13/23  send_mail_attachment() now accepts a replyTo optional parameter  
-# TME  05/12/23  Added is_maintenance_window()
-# TME  09/15/23  Added is_week_day()
-# TME  10/23/23  Get variables for mail.yaml config file. Added reportMethod.
-#                Removed ltsScripts and notify. Removed shbang.
-# TME  10/27/23  Mail hub is pulled from the main.yaml
+# Initial version 06/22/18 TME
+# Last updated 10/27/23 TME
 
 #
 # Load modules, set/initialize global variables

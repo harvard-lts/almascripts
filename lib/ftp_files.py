@@ -1,7 +1,8 @@
 # Use this class to transfer files using ftp.
 # Methods of the same name are used in this and the sftp_files class.
 #
-# TME  07/19/23  Initial version
+# Initial version 07/19/23 TME
+# Last updated 07/19/23 TME
 
 from ftplib import FTP
 

@@ -1,29 +1,9 @@
 # Alma related variables and Python functions
 # Loads almaconfig.yaml and makes its variables available to our Python scripts 
 #
-# TME  10/12/18  Initial version
-# TME  03/20/19  Adding NCIP variable and start http session functions
-# TME  04/25/19  Try/excepts used when set config parameters
-#                Added is_maintenance_window()
-# TME  05/10/19  Added almaDropboxRoot
-# TME  10/31/19  Added almaDropboxRoot and hdServer
-# TME  03/12/20  Added apiKeyUserRequest
-# TME  03/23/20  Addded userPdsApi and pwPdsApi
-# TME  04/06/20  Added is_reqular_work_hours()
-# TME  11/23/20  Added webhookDir
-# TME  02/17/21  Updated to support the new PDS API
-# TME  04/29/21  Added urlBarcodeApi
-# TME  05/05/21  Added almaHdExportDir
-# TME  09/15/21  Added lrwConnectStr
-# TME  02/14/22  Added read_queue_file(), add_to_queue_file() and write_queue_file()
-# TME  07/19/22  Added is_week_day() and a is_regular_work_hours()
-#                that's spelled properly and uses is_week_day()
-# TME  09/13/22  Using SafeLoader with yaml module
-# TME  09/16/22  Added urlJobsApi
-# TME  09/23/22  Added urlHoldingsApi
-# TME  10/23/23  Get variables for mail.yaml config file. Removed shbang.
-#                Removed is_reqular_work_hours (but kept is_regular_work_hours)
-             
+# Initial version 10/12/18 TME
+# Last updated 10/23/23 TME
+
 #
 # Load modules, set/initialize global variables
 #

@@ -1,7 +1,8 @@
 # Use this class to transfer files using sftp.
 # Methods of the same name are used in this and the ftp_files class.
 #
-# TME  08/04/23  Initial version
+# Initial version 08/04/23 TME
+# Last updated 08/04/23 TME
 
 from paramiko import SSHClient, AutoAddPolicy
 
