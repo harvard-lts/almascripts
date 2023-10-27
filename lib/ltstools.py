@@ -23,7 +23,7 @@
 # TME  09/15/23  Added is_week_day()
 # TME  10/23/23  Get variables for mail.yaml config file. Added reportMethod.
 #                Removed ltsScripts and notify. Removed shbang.
-              
+# TME  10/27/23  Mail hub is pulled from the main.yaml
 
 #
 # Load modules, set/initialize global variables
@@ -64,6 +64,10 @@ try:
 	adminMailTo = config['adminMailTo']
 except:
 	print('Error: failed to load config parameter adminMailTo from %s' % scriptConf)
+try:
+	mailHub = config['mailHub']
+except:
+	print('Error: failed to load config parameter mailHub from %s' % scriptConf)
 try:
 	adminMailFrom = config['adminMailTo']
 except:
@@ -256,7 +260,7 @@ def send_mail(mailTo, mailFrom, subject, message = False):
     if matched != None:
         mailTo = mailTo.split(',')
         
-    smtp = smtplib.SMTP('mailhub.harvard.edu')
+    smtp = smtplib.SMTP(mailHub)
     smtp.sendmail(mailFrom, mailTo, msgEmail.as_string())
     smtp.quit()            
 
@@ -314,7 +318,7 @@ def send_mail_attachment(mailTo, mailFrom, subject, message, files = None, reply
 		part['Content-Disposition'] = 'attachment; filename="%s"' % basename(file)
 		msgEmail.attach(part)
 
-	smtp = smtplib.SMTP('mailhub.harvard.edu')
+	smtp = smtplib.SMTP(mailHub)
 	smtp.sendmail(mailFrom, mailTo, msgEmail.as_string())
 	smtp.close()
 

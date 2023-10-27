@@ -37,6 +37,8 @@ almaOutputRoot: ''
 # Private key full path. Used when transferring files using a ssh key exchange.
 privateKey: ''
 
+mailHub: ''
+
 # Errors that are suspected to be system level problems should be sent here
 adminMailTo: ''
 adminMailFrom: ''
