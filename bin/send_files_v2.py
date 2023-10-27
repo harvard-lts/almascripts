@@ -3,8 +3,8 @@
 # Run the script with it's -h option to see it's description
 # and usage or scroll down at bit
 #
-# TME  08/04/23  New updated version of send_files.py
-# TME  10/23/23  Changed shbang to use /usr/bin/env
+# Initial version 08/04/23 TME
+# Last updated 10/23/27 TME
 
 #
 # Load modules, set/initialize global variables, grab arguments & check usage

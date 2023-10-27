@@ -1,20 +1,7 @@
 #!/usr/bin/env python3
 #
-# TME  07/17/17  Initial version
-# TME  09/13/17  Added more error checking and weeding restrictions
-# TME  03/05/18  Modified to report to the Job Monitor
-# TME  03/15/18  Updated for Python 3
-# TME  09/05/18  Renamed config file to weed_files.yaml
-#                and check config file parameter to '-c'
-# TME  07/26/22  Using notify class. Report name of host system. Gzipping files
-#                now supported. Weeding based on file count now supported.
-# TME  09/14/22  Using SafeLoader with yaml module
-# TME  10/04/22  Tar and zips directories
-# TME  05/08/23  fileWasCompress was referenced before assignment
-# TME  07/26/23  Can now weed mutliple directories for a single profile.
-#                0 days to keep is now supported.
-# TME  10/24/23  Changed shbang to use /usr/bin/env.
-#                Use reportMethod from ltstools.
+# Initial version 07/17/17 TME
+# Last updated 10/23/27 TME
 
 #
 # Load modules, define variables, grab arguments & check usage

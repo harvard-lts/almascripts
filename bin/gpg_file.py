@@ -3,10 +3,8 @@
 # Run the script with it's -h option to see it's description
 # and usage or scroll down at bit
 #
-# TME  12/17/18  Initial version
-# TME  06/06/19  Use string formatting to set encryptedFile
-# TME  01/24/20  gpgCmd and gpgDir are now set in ltstools.py
-# TME  10/23/23  Removed ltsScripts. Changed shbang to use /usr/bin/env.
+# Initial version 12/17/18 TME
+# Last updated 10/23/27 TME
 
 #
 # Load modules, set/initialize global variables, grab arguments & check usage

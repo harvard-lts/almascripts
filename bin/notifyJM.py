@@ -3,18 +3,8 @@
 # Run the script with it's -h option to see it's description
 # and usage or scroll down at bit
 #
-# TME  02/16/18  Initial version
-# TME  03/19/18  Updated for Python 3
-# TME  04/16/19  Added retries for Job Monitor notification
-# TME  03/24/21  Delays between retries grow longer. Added option to disable
-#                retries. Messages that exceed size limt are written to disk.
-# TME  03/30/21  Use utf-8 if ascii fails when encoding before checking message size
-# TME  11/19/21  Max allowed message size lowered to 65535 since that's 
-#                all that the database field can hold
-# TME  09/28/22  Increased max allowed message size to 204800
-# TME  11/30/22  Returned max allowed message size to 65535
-# TME  04/13/23  Moved most of the logic to the notify class
-# TME  10/23/23  Changed shbang to use /usr/bin/env
+# Initial version 02/16/18 TME
+# Last updated 10/23/27 TME
 
 #
 # Load modules, set/initialize global variables

@@ -4,9 +4,8 @@
 # Useful when running scripts from cron that need to access an Oracle database.
 # Other variables and set-up can be added to this script.
 #
-# TME  03/31/23  Initial version
-# TME  06/05/23  Added Oracle home bin to path
-# TME  10/24/23  Use main.yaml rather than ltsconfig.yaml
+# Initial version 03/31/23 TME
+# Last updated 10/23/27 TME
 
 # Show help message or get script command to run
 showHelp=0

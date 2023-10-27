@@ -3,12 +3,8 @@
 # Run the script with it's -h option to see it's description
 # and usage or scroll down at bit
 #
-# TME  07/12/18  Initial version
-# TME  08/13/18  Fixed returned messages
-# TME  04/12/19  Remove headings from result messages
-# TME  04/23/19  Archive only *.handled files if specified
-# TME  09/14/22  Using SafeLoader with yaml module
-# TME  10/23/23  Changed shbang to use /usr/bin/env
+# Initial version 07/12/18 TME
+# Last updated 10/23/27 TME
 
 #
 # Load modules, set/initialize global variables, grab arguments & check usage

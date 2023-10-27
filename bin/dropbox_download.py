@@ -3,12 +3,8 @@
 # Run the script with it's -h option to see it's description
 # and usage or scroll down at bit
 #
-# TME  08/03/23  Initial version
-# TME  08/08/23  Use Harvard's file name when checking for new files. 
-#                Return true if files are downloaded, otherwise, return False.
-#                Added check for password and ssh key.
-# TME  08/15/23  Changing to use object oriented programming
-# TME  10/23/23  Changed shbang to use /usr/bin/env
+# Initial version 08/03/23 TME
+# Last updated 10/23/27 TME
 
 #
 # Load modules, set/initialize global variables, grab arguments & check usage

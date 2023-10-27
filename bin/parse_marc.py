@@ -3,8 +3,8 @@
 # Run the script with it's -h option to see it's description
 # and usage or scroll down at bit
 #
-# TME  03/25/22  Initial version
-# TME  10/23/23  Changed shbang to use /usr/bin/env
+# Initial version 03/25/22 TME
+# Last updated 10/23/27 TME
 
 import argparse
 from pymarc import MARCReader

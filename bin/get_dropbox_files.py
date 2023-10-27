@@ -3,19 +3,8 @@
 # Run the script with it's -h option to see it's description
 # and usage or scroll down at bit
 #
-# TME  04/04/18  Initial version
-# TME  08/15/18  Unsupported files found are now just logs a warn
-# TME  04/01/19  Don't log a warning for an unsupported file 
-#                unless specified in the config file.
-#                Write out status flags if specified in the config file.
-# TME  04/23/19  Use Alma webhook ID in status file.
-#                Remove headings from result messages.
-#                Use try/except for global config parameters.
-# TME  04/27/21  Report proper error when unable to copy file
-#                to the incoming archive directory
-# TME  09/14/22  Using SafeLoader with yaml module
-# TME  07/13/23  Move duplicate files to dupe directory
-# TME  10/23/23  Changed shbang to use /usr/bin/env
+# Initial version 04/04/18 TME
+# Last updated 10/23/27 TME
 
 #
 # Load modules, set/initialize global variables, grab arguments & check usage
